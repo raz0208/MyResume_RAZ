@@ -199,45 +199,94 @@
   /* ---------------------------------------------------------------------
      5. Call-me modal
   --------------------------------------------------------------------- */
-  const callBtn = document.getElementById('call-btn');
-  const callModalBackdrop = document.getElementById('call-modal-backdrop');
-  const callModalClose = document.getElementById('call-modal-close');
-  const copyNumberBtn = document.getElementById('copy-number-btn');
-  const copyConfirm = document.getElementById('copy-confirm');
-  const PHONE_NUMBER = '+39 375 191 4767';
+  // const callBtn = document.getElementById('call-btn');
+  // const callModalBackdrop = document.getElementById('call-modal-backdrop');
+  // const callModalClose = document.getElementById('call-modal-close');
+  // const copyNumberBtn = document.getElementById('copy-number-btn');
+  // const copyConfirm = document.getElementById('copy-confirm');
+  // const PHONE_NUMBER = '+39 ***';
 
-  function openCallModal() {
-    callModalBackdrop.hidden = false;
-    callModalClose.focus();
+  // function openCallModal() {
+  //   callModalBackdrop.hidden = false;
+  //   callModalClose.focus();
+  //   document.addEventListener('keydown', onModalKeydown);
+  // }
+
+  // function closeCallModal() {
+  //   callModalBackdrop.hidden = true;
+  //   copyConfirm.textContent = '';
+  //   callBtn.focus();
+  //   document.removeEventListener('keydown', onModalKeydown);
+  // }
+
+  // function onModalKeydown(e) {
+  //   if (e.key === 'Escape') closeCallModal();
+  // }
+
+  // if (callBtn && callModalBackdrop) {
+  //   callBtn.addEventListener('click', openCallModal);
+  //   callModalClose.addEventListener('click', closeCallModal);
+  //   callModalBackdrop.addEventListener('click', (e) => {
+  //     if (e.target === callModalBackdrop) closeCallModal();
+  //   });
+  // }
+
+  // if (copyNumberBtn) {
+  //   copyNumberBtn.addEventListener('click', async () => {
+  //     try {
+  //       await navigator.clipboard.writeText(PHONE_NUMBER);
+  //       copyConfirm.textContent = 'Copied to clipboard.';
+  //     } catch (err) {
+  //       copyConfirm.textContent = PHONE_NUMBER; // fallback: show the number to copy manually
+  //     }
+  //   });
+  // }
+
+  /* ---------------------------------------------------------------------
+     5. Email-me modal
+  --------------------------------------------------------------------- */
+
+  const emailBtn = document.getElementById('email-btn');
+  const emailModalBackdrop = document.getElementById('email-modal-backdrop');
+  const emailModalClose = document.getElementById('email-modal-close');
+  const copyEmailBtn = document.getElementById('copy-email-btn');
+  const copyConfirm = document.getElementById('copy-confirm');
+  
+  // Replace with your actual email address
+  const EMAIL_ADDRESS = 'raz0208@gmail.com'; 
+
+  function openEmailModal() {
+    emailModalBackdrop.hidden = false;
+    emailModalClose.focus();
     document.addEventListener('keydown', onModalKeydown);
   }
 
-  function closeCallModal() {
-    callModalBackdrop.hidden = true;
+  function closeEmailModal() {
+    emailModalBackdrop.hidden = true;
     copyConfirm.textContent = '';
-    callBtn.focus();
+    emailBtn.focus();
     document.removeEventListener('keydown', onModalKeydown);
   }
 
   function onModalKeydown(e) {
-    if (e.key === 'Escape') closeCallModal();
+    if (e.key === 'Escape') closeEmailModal();
   }
 
-  if (callBtn && callModalBackdrop) {
-    callBtn.addEventListener('click', openCallModal);
-    callModalClose.addEventListener('click', closeCallModal);
-    callModalBackdrop.addEventListener('click', (e) => {
-      if (e.target === callModalBackdrop) closeCallModal();
+  if (emailBtn && emailModalBackdrop) {
+    emailBtn.addEventListener('click', openEmailModal);
+    emailModalClose.addEventListener('click', closeEmailModal);
+    emailModalBackdrop.addEventListener('click', (e) => {
+      if (e.target === emailModalBackdrop) closeEmailModal();
     });
   }
 
-  if (copyNumberBtn) {
-    copyNumberBtn.addEventListener('click', async () => {
+  if (copyEmailBtn) {
+    copyEmailBtn.addEventListener('click', async () => {
       try {
-        await navigator.clipboard.writeText(PHONE_NUMBER);
+        await navigator.clipboard.writeText(EMAIL_ADDRESS);
         copyConfirm.textContent = 'Copied to clipboard.';
       } catch (err) {
-        copyConfirm.textContent = PHONE_NUMBER; // fallback: show the number to copy manually
+        copyConfirm.textContent = EMAIL_ADDRESS; // fallback: show the email to copy manually
       }
     });
   }
