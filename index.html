@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reza Azari Aghouieh — AI Engineer &amp; Data Scientist</title>
+  <meta name="description" content="Reza Azari Aghouieh — AI Engineer and Data Scientist specializing in RAG, NLP, semantic search and production ML systems.">
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (labels / data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ SKIP LINK (accessibility) ============ -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-dot"></span>RAZ
+        </span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-ghost nav-cta">Get in touch</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <!-- Signature element: a sparse semantic graph, drawn from his actual skill set -->
+      <canvas id="graph-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-inner">
+        <p class="eyebrow">AI Engineer / Data Scientist</p>
+        <h1 class="hero-title">Reza Azari<br>Aghouieh</h1>
+        <p class="hero-sub">
+          I build retrieval-augmented systems, real-time fraud detection models, and transformer-based
+          NLP pipelines — and I like shipping them, not just researching them.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="call-btn" type="button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1L6.6 10.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            Call me
+          </button>
+          <!-- <a class="btn btn-outline" href="#contact">
+            Email me
+          </a> -->
+        </div>
+
+        <!-- Impact strip: real metrics pulled straight from the work, not decoration -->
+        <!-- <dl class="impact-strip" aria-label="Career highlights">
+          <div class="impact-item">
+            <dt>+10%</dt><dd>Semantic similarity accuracy</dd>
+          </div>
+          <div class="impact-item">
+            <dt>−20%</dt><dd>Retrieval latency</dd>
+          </div>
+          <div class="impact-item">
+            <dt>90.9%</dt><dd>Predictive model accuracy</dd>
+          </div>
+          <div class="impact-item">
+            <dt>100K+</dt><dd>Posts mined for sentiment</dd>
+          </div>
+        </dl> -->
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-inner about-grid">
+        <div class="about-copy reveal">
+          <p class="eyebrow">About</p>
+          <h2>Research instincts, production habits.</h2>
+          <p>
+            I'm an AI Engineer and Data Scientist with a foundation in data structures, algorithms,
+            and production ML systems. My recent work centers on retrieval-augmented generation,
+            semantic search over graph databases, and transformer-based NLP — alongside earlier
+            experience building real-time fraud detection models and managing live infrastructure.
+            I'm looking for a role in AI/ML engineering or data science focused on NLP, intelligent
+            systems, and getting models into the real world.
+          </p>
+        </div>
+
+        <dl class="quick-facts reveal">
+          <div>
+            <dt>Based in</dt>
+            <dd>Naples, Italy | Open To Relocate</dd>
+          </div>
+          <div>
+            <dt>Experience</dt>
+            <dd>7+ years across IT, data &amp; applied AI</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>RAG · NLP · Semantic Search · MLOps</dd>
+          </div>
+          <div>
+            <dt>Languages spoken</dt>
+            <dd>4 — see below</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="section-inner">
+        <p class="eyebrow reveal">Skills</p>
+        <h2 class="reveal">The stack, by node cluster.</h2>
+
+        <div class="skill-groups">
+
+          <div class="skill-group reveal">
+            <h3>Programming</h3>
+            <ul class="chip-list">
+              <li class="chip">Python (Pandas, NumPy)</li>
+              <li class="chip">R</li>
+              <li class="chip">C</li>
+              <li class="chip">C++</li>
+              <li class="chip">HTML / CSS</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Machine Learning &amp; AI</h3>
+            <ul class="chip-list">
+              <li class="chip">NLP</li>
+              <li class="chip">RAG</li>
+              <li class="chip">Transformers</li>
+              <li class="chip">Embeddings</li>
+              <li class="chip">Prompt Engineering</li>
+              <li class="chip">Fine-tuning</li>
+              <li class="chip">Computer Vision</li>
+              <li class="chip">Deep Learning</li>
+              <li class="chip">Model Evaluation</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Frameworks</h3>
+            <ul class="chip-list">
+              <li class="chip">PyTorch</li>
+              <li class="chip">TensorFlow</li>
+              <li class="chip">scikit-learn</li>
+              <li class="chip">Keras</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Databases &amp; Big Data</h3>
+            <ul class="chip-list">
+              <li class="chip">MySQL</li>
+              <li class="chip">MongoDB</li>
+              <li class="chip">Neo4j</li>
+              <li class="chip">Vector Database</li>
+              <li class="chip">Kafka</li>
+              <li class="chip">Hadoop</li>
+              <li class="chip">Spark</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Cloud, DevOps &amp; MLOps</h3>
+            <ul class="chip-list">
+              <li class="chip">Git / GitHub</li>
+              <li class="chip">FastAPI</li>
+              <li class="chip">Docker</li>
+              <li class="chip">Kubernetes</li>
+              <li class="chip">CI/CD</li>
+              <li class="chip">AWS (S3, Lambda, EC2, IAM, SageMaker)</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Visualization &amp; BI</h3>
+            <ul class="chip-list">
+              <li class="chip">Power BI</li>
+              <li class="chip">Tableau</li>
+              <li class="chip">Streamlit</li>
+              <li class="chip">Databricks</li>
+              <li class="chip">Excel</li>
+              <li class="chip">Matplotlib</li>
+              <li class="chip">Seaborn</li>
+              <li class="chip">Plotly</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="section-inner">
+        <p class="eyebrow reveal">Experience</p>
+        <h2 class="reveal">Where the work happened.</h2>
+
+        <ol class="timeline">
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Mar 2025 – Sep 2025</p>
+              <h3>Data Scientist / NLP Researcher</h3>
+              <p class="timeline-org">Urban/ECO Research Center · Naples, Italy</p>
+              <ul>
+                <li>Built a hybrid conversational AI agent on the FANTASIA framework, pairing a graph database with LLMs for explainable, semantically rich research retrieval.</li>
+                <li>Developed a semantic search pipeline combining ModernBERT embeddings with Neo4j graph algorithms — similarity accuracy up 10%+, retrieval latency down 20%+.</li>
+                <li>Benchmarked transformer models (ModernBERT, mpnet, MiniLM) against Silhouette, ARI and V-measure clustering metrics to optimize vector representations.</li>
+                <li>Automated topic modeling and interactive UMAP visualizations using TurfTopic (BERTopic, Vec2Top, SmolLM2).</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Sep 2024 – Oct 2024</p>
+              <h3>Data Scientist Intern</h3>
+              <p class="timeline-org">PRODGY InfoTech · India (Remote)</p>
+              <ul>
+                <li>Built customer behavior prediction models (Decision Trees, KNN, SVM) reaching 90.9% accuracy, with outlier detection and cross-validation.</li>
+                <li>Ran EDA on traffic accident records to surface high-risk hotspots, delivering insights through Power BI dashboards.</li>
+                <li>Mined 100K+ social media posts for sentiment trends using NLTK and spaCy.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Mar 2017 – Nov 2023</p>
+              <h3>IT Manager &amp; Data Analyst</h3>
+              <p class="timeline-org">Ravin Tech Company · Tabriz, Iran</p>
+              <ul>
+                <li>Built Power BI / Tableau dashboards (DAX, Power Query) across finance, retail and supply chain.</li>
+                <li>Built predictive models (Random Forest, XGBoost) to support data-driven decisions.</li>
+                <li>Designed 20+ websites and digital campaigns, lifting engagement and conversion 25%+.</li>
+                <li>Managed IT infrastructure and virtualization (VMware, Hyper-V, Citrix) at 99.9% uptime.</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="section-inner">
+        <p class="eyebrow reveal">Projects</p>
+        <h2 class="reveal">Selected builds.</h2>
+
+        <div class="project-columns">
+
+          <div class="project-column reveal">
+            <h3>Production &amp; ML systems</h3>
+
+            <article class="project-card">
+              <h4>RAG Optimization</h4>
+              <p>Compared PPO, DPO and GRPO for retrieval-augmented alignment; benchmarked faithfulness and relevancy with Ragas.</p>
+            </article>
+
+            <article class="project-card">
+              <h4>Fraud Detection Platform</h4>
+              <p>Random Forest and XGBoost models for real-time financial fraud prediction.</p>
+            </article>
+          </div>
+
+          <div class="project-column reveal">
+            <h3>Research &amp; quantitative</h3>
+
+            <article class="project-card">
+              <h4>Natural Gas Storage Pricing</h4>
+              <p>Modeled with Ornstein-Uhlenbeck mean-reversion processes and Monte Carlo simulation.</p>
+            </article>
+
+            <article class="project-card">
+              <h4>Credit Risk Calibration</h4>
+              <p>Isotonic Regression and Platt Scaling for risk-bucket calibration, validated with ROC-AUC and Kolmogorov-Smirnov statistics.</p>
+            </article>
+
+            <article class="project-card">
+              <h4>Multimodal Emotion Recognition</h4>
+              <p>CNN-based pipeline on ECG/GSR signals with Bayesian regression for valence-arousal prediction (MAE ≈ 0.04); Q-learning-driven robotic adaptation (r = 0.72).</p>
+            </article>
+
+            <article class="project-card">
+              <h4>Open-Ended LLM Evaluation Metrics</h4>
+              <p>Built a taxonomy of 50+ LLM evaluation metrics into a task-specific decision framework.</p>
+            </article>
+
+            <article class="project-card">
+              <h4>Pedestrian Detection</h4>
+              <p>Fine-tuned YOLOv5 and MobileNetV2 on the CityPersons dataset (mAP50:90 ≈ 50%).</p>
+            </article>
+
+            <article class="project-card">
+              <h4>Student Performance Prediction</h4>
+              <p>Hybrid LSTM + multi-head self-attention + ANN model on the OULAD dataset, ~80% accuracy.</p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION + CERTIFICATES ============ -->
+    <section class="section" id="education">
+      <div class="section-inner">
+
+        <div class="reveal">
+          <p class="eyebrow">Education</p>
+          <h2>Foundations.</h2>
+
+          <ul class="edu-list">
+            <li>
+              <h3>MSc, Data Science <span>(NLP Focus)</span></h3>
+              <p>University of Naples Federico II · Naples, Italy</p>
+            </li>
+            <li>
+              <h3>BSc, Information Technology Engineering</h3>
+              <p>Payam-e Noor University · Tabriz, Iran</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="reveal">
+          <p class="eyebrow">Certificates</p>
+          <h2>Kept current.</h2>
+
+          <ul class="cert-grid">
+            <li>JPMorgan Chase — Quantitative Research Virtual Experience <span>2025</span></li>
+            <li>Docker &amp; Kubernetes Specialization <span>2025</span></li>
+            <li>CI/CD Specialization <span>2025</span></li>
+            <li>Data Science Specialization <span>2025</span></li>
+            <li>Big Data with Spark &amp; Hadoop <span>2025</span></li>
+            <li>Data Modeling in Power BI <span>2025</span></li>
+            <li>AWS Cloud Practitioner Essentials <span>2025</span></li>
+            <li>SQL for Data Science <span>2024</span></li>
+            <li>Python Programming <span>2024</span></li>
+          </ul>
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- ============ LANGUAGES ============ -->
+    <section class="section section-alt" id="languages">
+      <div class="section-inner">
+        <p class="eyebrow reveal">Languages</p>
+        <h2 class="reveal">How I work across borders.</h2>
+
+        <ul class="lang-list reveal">
+                    <li>
+            <span class="lang-name">English</span>
+            <span class="lang-bar"><span class="lang-fill" style="--fill:70%"></span></span>
+            <span class="lang-level">B2</span>
+          </li>
+          <li>
+            <span class="lang-name">Italian</span>
+            <span class="lang-bar"><span class="lang-fill" style="--fill:35%"></span></span>
+            <span class="lang-level">A2</span>
+          </li>
+          <li>
+            <span class="lang-name">Persian</span>
+            <span class="lang-bar"><span class="lang-fill" style="--fill:100%"></span></span>
+            <span class="lang-level">Native</span>
+          </li>
+          <li>
+            <span class="lang-name">Azerbaijani</span>
+            <span class="lang-bar"><span class="lang-fill" style="--fill:100%"></span></span>
+            <span class="lang-level">Mother tongue</span>
+          </li>
+          <li>
+            <span class="lang-name">Turkish</span>
+            <span class="lang-bar"><span class="lang-fill" style="--fill:55%"></span></span>
+            <span class="lang-level">A2</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="section-inner contact-grid">
+
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk about your next system.</h2>
+          <p>Open to roles in AI/ML engineering and data science — NLP, RAG and production deployment especially.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:raz0208@gmail.com">raz0208@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">Location</span>
+              <span>Naples, Italy</span>
+            </li>
+            <li>
+              <span class="contact-label">Elsewhere</span>
+              <span class="contact-socials">
+                <!-- TODO: replace # with real profile URLs -->
+                <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <span class="field-error" id="name-error" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <span class="field-error" id="email-error" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="field-error" id="message-error" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-inner footer-inner">
+      <p>© <span id="year"></span> Reza Azari Aghouieh. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#hero" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ CALL MODAL ============ -->
+  <div class="modal-backdrop" id="call-modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="call-modal-title" id="call-modal">
+      <button class="modal-close" id="call-modal-close" aria-label="Close">&times;</button>
+      <p class="eyebrow" id="call-modal-title">Call Reza</p>
+      <p class="modal-number">+39 375 191 4767</p>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="tel:+393751914767">Call now</a>
+        <button class="btn btn-outline" id="copy-number-btn" type="button">Copy number</button>
+      </div>
+      <p class="modal-hint" id="copy-confirm" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
